@@ -10,7 +10,7 @@ Este desafio deve ser feito por você, gaste o tempo que você quiser, porém no
 
 # Descrição do projeto
 
-Você é um Engenheiro de Dados na empresa XYZ. Você foi designado para criar uma solução de engenharia de dados para organizar os dados da comapnhia através de uma solução segura e escalável. A solução deve ser capaz de coletar dados de várias fontes, tais como APIs públicas e Arquivos CSV e Excel e armazená-los em um repositório central. A solução deve então ser capaz de aplicar as regras de negócio e armazenar os dados em um banco de dados.
+Você é um Engenheiro de Dados na empresa XYZ e foi designado para criar uma solução de engenharia de dados para organizar os dados da companhia através de uma solução segura e escalável. A solução deve ser capaz de coletar dados de várias fontes, tais como APIs públicas e Arquivos CSV e Excel e armazená-los em um repositório central. A solução deve então ser capaz de aplicar as regras de negócio e armazenar os dados em um banco de dados.
 
 Proponha uma solução para o problema proposto acima.
 
