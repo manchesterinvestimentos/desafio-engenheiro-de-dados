@@ -17,7 +17,7 @@ Trades (execuções de ordens): CSV exportado da corretora, com colunas: trade_i
 
 Preços de Fechamento (EOD): CSV diário de mercado, com colunas: symbol, date, close_price.
 
-O objetivo é estruturar um processo que integre essas fontes e gere informações de P&L realizado e não realizado por conta e ativo.
+O objetivo é estruturar um processo que integre essas fontes e gere informações de P&L realizado por conta e ativo.
 
 ## Parte 1 — Arquitetura
 
