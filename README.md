@@ -8,18 +8,43 @@ Este desafio deve ser feito por você, gaste o tempo que você quiser, porém no
 
 1. Envie via email com a solução proposta para seu contato Manchester Investimentos com cópia para rh@manchesterinvest.com.br.
 
-# Descrição do projeto
+# Contexto
 
-Você é um Engenheiro de Dados na empresa XYZ e foi designado para criar uma solução de engenharia de dados para organizar os dados da companhia através de uma solução segura e escalável. A solução deve ser capaz de coletar dados de várias fontes, tais como APIs públicas e Arquivos CSV e Excel e armazená-los em um repositório central. A solução deve então ser capaz de aplicar as regras de negócio e armazenar os dados em um banco de dados.
+A Manchester Investimentos quer criar uma base consolidada de informações para analisar o desempenho de ativos da bolsa.
+Hoje, os dados vêm de duas fontes:
 
-Proponha uma solução para o problema proposto acima.
+Trades (execuções de ordens): CSV exportado da corretora, com colunas: trade_id, account, symbol, side, qty, price, trade_date.
 
-# Especificações:
+Preços de Fechamento (EOD): CSV diário de mercado, com colunas: symbol, date, close_price.
 
-1. A solução deve ser escalável e capaz de lidar com grandes volumes de dados.
-2. A solução deve ser segura e proteger os dados dos usuários.
-3. A solução deve ser fácil de usar e possa ser usada por usuários com diferentes níveis de conhecimento.
-4. A solução deve conter uma etapa de qualidade de dados.
+O objetivo é estruturar um processo que integre essas fontes e gere informações de P&L realizado e não realizado por conta e ativo.
+
+## Parte 1 — Arquitetura
+
+Desenhe (ou descreva em texto) uma arquitetura simples para resolver o problema:
+
+Onde você armazenaria os dados brutos?
+Como faria a ingestão e transformação?
+Como garantiria qualidade mínima dos dados?
+Como entregaria o resultado para o time de análise (ex.: arquivo, banco, dashboard)?
+Como faria o monitoramento dos pipelines?
+
+👉 A resposta pode ser em texto com bullets + (opcional) um diagrama simples.
+
+## Parte 2 — Código (Python + Pandas)
+
+Implemente um script em Python que:
+
+Leia os dois arquivos CSV (trades.csv e prices.csv).
+
+Limpe e normalize os dados (ex.: garantir que as datas estejam em formato datetime, que qty seja numérico positivo).
+
+Calcule:
+Preço médio de compra por ativo e conta.
+P&L realizado nas vendas ((preço_venda - custo_médio) * quantidade_vendida).
+Gere uma tabela final consolidada com colunas: account, symbol, position_final, avg_price, realized_pnl.
+
+Salve a saída em um novo CSV (pnl_report.csv).
 
 # Ferramentas:
 
